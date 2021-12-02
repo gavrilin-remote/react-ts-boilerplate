@@ -1,0 +1,17 @@
+$input: #959292;
+$error: #DC1115;
+$border: #DADDF2;
+$lightBlue: #E1F8FF;
+$disabled: #3D5A89;
+$blue: #146EFF;
+$backgroud: #ffffff;
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        @media ( min-width: 360px ) and ( max-width: 1248px) {@content;}
+    }
+    @else if $point == sm {
+        @media (min-width: 360px) and (max-width: 767px) {@content;}
+    }
+}
+$buttonDisabled: #C4C4C4

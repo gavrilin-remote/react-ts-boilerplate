@@ -1,0 +1,67 @@
+@import './styles/variables.scss';
+
+/*zeroing*/
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+//:focus,:active{outline: none;}
+//a:focus,a:active{
+  //  outline: none;
+  //  font-family: 'Montserrat Bold';
+  //  font-style: normal;
+  //  font-weight: bold;
+  //} // TODO all links on page or for all link in nav .
+
+         nav,footer,header,aside{display: block;}
+
+html,body{
+  min-height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none; color: $blue;} a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*----------------------------------------------------*/
+
+/*fonts*/
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('./assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat SemiBold';
+  src: url('./assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+/*----------------------------------------------------*/
+
+html{
+  background-color: $backgroud;
+}

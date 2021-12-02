@@ -1,0 +1,58 @@
+@import "src/styles/variables";
+
+.container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    max-width: 683px;
+  }
+  .p42{
+    padding-top: 42px;
+    font-size: 18px;
+  }
+}
+.disclamer {
+  padding-bottom: 46px;
+  .title{
+    font-family: 'Montserrat Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+
+    text-transform: capitalize;
+    color: $white
+  }
+  .body{
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    /* or 208% */
+
+    text-transform: uppercase;
+
+    color: $white;
+
+    mix-blend-mode: normal;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  .subcontent{
+    padding-top: 12.57px;
+    font-family: 'Montserrat SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: $minterestTextGrey;
+  }
+}
+
